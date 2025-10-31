@@ -1,3 +1,4 @@
+from oscarcrab.llm import generate
 """
 Core conversation logic for Oscar Crab.
 
@@ -22,8 +23,8 @@ class ChatAgent:
         self.tone = tone
 
     def say(self, message: str) -> str:
-        """Echo with personality (placeholder)."""
-        return f"{message} - {self.name} the crab"
+        prompt = f"{self.name} ({self.tone}) says: {message}"
+        return generate(prompt)
 
 
 def run_conversation_loop():
