@@ -1,9 +1,5 @@
-# src/oscarcrab/config.yaml
-# Unified configuration for Oscar Crab LLM backends
-
 model:
-  ollama: "mistral"
-  transformers: "microsoft/phi-3-mini"
+  ollama: "llama3.2:1b"
 
 generation:
   max_tokens: 128

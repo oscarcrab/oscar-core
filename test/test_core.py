@@ -18,6 +18,6 @@ def test_chat_agent_say():
     assert "Oscar" in response
 
 
-def test_run_conversation_loop():
+def test_chat():
     # This is a stub. We'll test with mocks later
     assert True
