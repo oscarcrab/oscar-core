@@ -66,8 +66,15 @@ def load_backend() -> LLMBackend:
 
 
 # Singleton instance
-_backend = load_backend()
+_backend = None
+
+def get_backend():
+    global _backend
+    if _backend is None:
+        _backend = load_backend()
+    return _backend
+
 
 def generate(prompt: str) -> str:
     """Unified entrypoint for text generation."""
-    return _backend.generate(prompt)
+    return get_backend().generate(prompt)
