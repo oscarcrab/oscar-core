@@ -1,0 +1,12 @@
+model:
+  ollama: "llama3.2:1b"
+
+generation:
+  max_tokens: 128
+  temperature: 0.7
+  top_p: 0.9
+  top_k: 50
+
+ollama:
+  server_url: "http://localhost:11434"
+  timeout: 30

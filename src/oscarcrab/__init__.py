@@ -6,10 +6,10 @@ __author__ = "Oscar Crab Team"
 
 from oscarcrab.core import (
     ChatAgent,
-    run_conversation_loop,
+    chat,
 )
 
 __all__ = [
     "ChatAgent",
-    "run_conversation_loop",
+    "chat",
 ]

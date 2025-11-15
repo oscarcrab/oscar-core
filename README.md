@@ -22,3 +22,13 @@ git clone https://github.com/oscarcrab/oscar-core.git
 cd oscar-core
 pip install -e .
 ```
+
+**Run the conversation loop**
+
+From the command line Python REPL:
+
+```bash
+python -c "import oscarcrab; oscarcrab.chat()"
+```
+
+> **Note:** Make sure Ollama is running (other fallback backends to be implemented later).  

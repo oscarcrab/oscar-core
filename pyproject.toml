@@ -20,6 +20,11 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
 ]
 
+dependencies = [
+    "requests>=2.31",
+    "pyyaml>=6.0"
+]
+
 [project.optional-dependencies]
 dev = ["pytest", "pytest-cov", "ruff"]
 
@@ -28,3 +33,6 @@ where = ["src"]
 
 [tool.setuptools.package-dir]
 "" = "src"
+
+[tool.setuptools.package-data]
+oscarcrab = ["config.yaml"]
